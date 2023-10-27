@@ -1,6 +1,4 @@
-<template>
-	<div></div>
-</template>
+<template>Register</template>
 
 <script>
 export default {}

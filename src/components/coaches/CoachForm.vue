@@ -37,11 +37,11 @@
 		</div>
 		<base-button>Register</base-button>
 	</form>
-	<!-- <input type="checkbox" value="frontend" id="frontend" /> -->
 </template>
 
 <script>
 export default {
+	emits: ['save-data'],
 	data() {
 		return {
 			firstName: '',
@@ -62,6 +62,7 @@ export default {
 			}
 
 			console.log(formData)
+			this.$emit('save-data', formData)
 		},
 	},
 }
